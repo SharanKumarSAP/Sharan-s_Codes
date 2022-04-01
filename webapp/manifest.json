@@ -1,0 +1,52 @@
+{
+    "sap.app": {
+        "id": "CUST",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "Customer Maintanence Application"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        }
+    },
+    "sap.ui5": {
+        "models": {},
+        "dependencies": {
+            "minUI5Version": "1.0.0"
+        },
+        "rootView": {
+            "viewName": "CUST.view.App",
+            "id": "idApp",
+            "type": "XML"
+        },
+        "routing": {
+            "config": {
+                "viewPath": "CUST.view",
+                "viewType": "XML",
+                "controlId": "appCon"
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "main",
+                    "target": [
+                        "main"
+                    ]
+                }
+            ],
+            "targets": {
+                "main": {
+                    "viewName": "Main",
+                    "viewId": "idMain",
+                    "controlAggregation": "pages"
+                }
+            }
+        }
+    }
+}
