@@ -1,4 +1,6 @@
 <mvc:View xmlns:mvc ="sap.ui.core.mvc" xmlns:m ="sap.m" controllerName="CUST.controller.Main">
 
-<m:Page title="Customer Maintainence Application"></m:Page>
+<m:Page title="Customer Maintainence Application">
+
+</m:Page>
 </mvc:View>
